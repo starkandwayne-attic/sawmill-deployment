@@ -3,5 +3,5 @@
 set -e
 
 echo "Generating credentials for sawmill admin."
-safe gen "${VAULT_PREFIX}/users/admin password" -- \
+safe gen 40 "${VAULT_PREFIX}/users/admin" password -- \
      > /dev/null
