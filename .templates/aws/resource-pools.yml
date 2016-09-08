@@ -13,12 +13,14 @@ resource_pools:
     cloud_properties:
       instance_type: t2.medium
       availability_zone: (( grab meta.aws.azs.z1 ))
+
   - name: small_z2
     network: sawmill_z2
     stemcell: (( grab meta.stemcell ))
     cloud_properties:
       instance_type: t2.medium
       availability_zone: (( grab meta.aws.azs.z2))
+
   - name: small_z3
     network: sawmill_z3
     stemcell: (( grab meta.stemcell ))

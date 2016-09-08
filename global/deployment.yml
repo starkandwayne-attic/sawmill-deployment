@@ -1,5 +1,6 @@
 ---
 name: (( param "Please define the deployment name in the environment templates (name)" ))
+
 director_uuid: (( param "Please provide the UUID of your target BOSH director in the site/environment templates (director_uuid)" ))
 
 update:
