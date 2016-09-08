@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+echo "Generating credentials for sawmill admin."
+safe gen "${VAULT_PREFIX}/users/admin password" -- \
+     > /dev/null

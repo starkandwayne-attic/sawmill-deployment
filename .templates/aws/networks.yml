@@ -1,0 +1,11 @@
+---
+networks:
+- name: sawmill_z1
+  type: manual
+  subnets: (( param "Specify the z1 network for sawmill (networks.sawmill_z1.subnets)" ))
+- name: sawmill_z2
+  type: manual
+  subnets: (( param "Specify the z2 network for sawmill (networks.sawmill_z2.subnets)" ))
+- name: sawmill_z3
+  type: manual
+  subnets: (( param "Specify the z3 network for sawmill (networks.sawmill_z3.subnets)" ))

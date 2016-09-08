@@ -1,0 +1,3 @@
+---
+meta:
+  sawmill_servers: (( grab jobs.sawmill.networks.sawmill.static_ips ))

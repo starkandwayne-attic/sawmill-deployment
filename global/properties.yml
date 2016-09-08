@@ -1,0 +1,7 @@
+---
+properties:
+  sawmill:
+    skip_ssl_verify: (( param "Specify whether or not to skip SSL verification (properties.sawmill.skip_ssl_verify)" )) 
+    users:
+    - name: (( param "Specify admin username (properties.sawmill.users.name)" ))
+      pass: (( param "Specify admin password (properties.sawmill.users.pass)" ))

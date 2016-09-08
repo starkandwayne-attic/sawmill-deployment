@@ -1,0 +1,5 @@
+---
+jobs:
+- name: sawmill
+  instances: 3
+  .: (( inject meta.jobs.sawmill ))

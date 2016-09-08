@@ -1,0 +1,11 @@
+---
+meta:
+  sawmill_servers: (( param "Please override with the IPs of all the Sawmill servers (meta.sawmill_servers)" ))
+
+jobs:
+  sawmill:
+    persistent_disk: 4096
+    templates:
+    - { name: sawmill, release: sawmill }
+    - { name: toolbelt, release: toolbelt}
+    - { name: toolbelt-quick, release: toolbelt }

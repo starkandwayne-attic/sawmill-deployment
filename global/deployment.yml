@@ -1,0 +1,10 @@
+---
+name: (( param "Please define the deployment name in the environment templates (name)" ))
+director_uuid: (( param "Please provide the UUID of your target BOSH director in the site/environment templates (director_uuid)" ))
+
+update:
+  canaries: 1
+  max_in_flight: 3
+  canary_watch_time: 1000-30000
+  update_watch_time: 1000-30000
+  serial: true
