@@ -2,9 +2,9 @@
 meta:
   aws:
     azs:
-      z1: (( param "Define the z1 AWS availability zone (meta.aws.azs.z1)" ))
-      z2: (( param "Define the z2 AWS availability zone (meta.aws.azs.z2)" ))
-      z3: (( param "Define the z3 AWS availability zone (meta.aws.azs.z3)" ))
+      z1: (( param "Define the z1 AWS availability zone" ))
+      z2: (( param "Define the z2 AWS availability zone" ))
+      z3: (( param "Define the z3 AWS availability zone" ))
 
 resource_pools:
   - name: small_z1
