@@ -1,7 +1,7 @@
 ---
-name: (( param "Please define the deployment name in the environment templates (name)" ))
+name: (( param "Please define the deployment name in the environment templates" ))
 
-director_uuid: (( param "Please provide the UUID of your target BOSH director in the site/environment templates (director_uuid)" ))
+director_uuid: (( param "Please provide the UUID of your target BOSH director in the site/environment templates" ))
 
 update:
   canaries: 1

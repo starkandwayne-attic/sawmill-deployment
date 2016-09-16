@@ -3,7 +3,8 @@ properties:
 
   sawmill:
 
-    skip_ssl_verify: (( param "Specify whether or not to skip SSL verification (properties.sawmill.skip_ssl_verify)" ))
+    skip_ssl_verify: (( param "Specify whether or not to skip SSL verification" ))
 
-    users: (( param "Specify admin user name & password (properties.sawmill.users.0.{name,pass})" ))
-
+    users: (( param "Specify a list of users to restrict the sawmill HTTP endpoint with" ))
+    #- name: admin
+    #  pass: password

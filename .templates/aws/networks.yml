@@ -3,37 +3,35 @@ networks:
 - name: sawmill_z1
   type: manual
   subnets: 
-  - range: (( param "Enter the CIDR address for this subnet (networks.0<sawmill_z1>.subnets.range)" ))
-    gateway: (( param "Enter the Gateway for this subnet (networks.0<sawmill_z1>.subnets.gateway)" ))
+  - range: (( param "Enter the CIDR address for this subnet" ))
+    gateway: (( param "Enter the Gateway for this subnet" ))
     dns: (( grab meta.dns ))
-    static: (( param "Enter the static IP ranges for this subnet (networks.0<sawmill_z1>.subnets.static)" ))
-    reserved: (( param "Enter the reserved IP ranges for this subnet (networks.0<sawmill_z1>.subnets.reserved)" ))
+    static: (( param "Enter the static IP ranges for this subnet" ))
+    reserved: (( param "Enter the reserved IP ranges for this subnet" ))
     cloud_properties:
       security_groups: (( grab meta.security_groups ))
-      subnet: (( param "Enter the AWS subnet ID for this subnet (networks.0<sawmill_z1>.subnets.cloud_properties.subnet))" ))
+      subnet: (( param "Enter the AWS subnet ID for this subnet" ))
 
 - name: sawmill_z2
   type: manual
   subnets: 
-  - range: (( param "Enter the CIDR address for this subnet (networks.0<sawmill_z1>.subnets.range)" ))
-    gateway: (( param "Enter the Gateway for this subnet (networks.0<sawmill_z1>.subnets.gateway)" ))
+  - range: (( param "Enter the CIDR address for this subnet" ))
+    gateway: (( param "Enter the Gateway for this subnet" ))
     dns: (( grab meta.dns ))
-    static: (( param "Enter the static IP ranges for this subnet (networks.0<sawmill_z1>.subnets.static)" ))
-    reserved: (( param "Enter the reserved IP ranges for this subnet (networks.0<sawmill_z1>.subnets.reserved)" ))
+    static: (( param "Enter the static IP ranges for this subnet" ))
+    reserved: (( param "Enter the reserved IP ranges for this subnet" ))
     cloud_properties:
       security_groups: (( grab meta.security_groups ))
-      subnet: (( param "Enter the AWS subnet ID for this subnet (networks.0<sawmill_z1>.subnets.cloud_properties.subnet))" ))
+      subnet: (( param "Enter the AWS subnet ID for this subnet" ))
 
 - name: sawmill_z3
   type: manual
   subnets: 
-  - range: (( param "Enter the CIDR address for this subnet (networks.0<sawmill_z1>.subnets.range)" ))
-    gateway: (( param "Enter the Gateway for this subnet (networks.0<sawmill_z1>.subnets.gateway)" ))
+  - range: (( param "Enter the CIDR address for this subnet" ))
+    gateway: (( param "Enter the Gateway for this subnet" ))
     dns: (( grab meta.dns ))
-    static: (( param "Enter the static IP ranges for this subnet (networks.0<sawmill_z1>.subnets.static)" ))
-    reserved: (( param "Enter the reserved IP ranges for this subnet (networks.0<sawmill_z1>.subnets.reserved)" ))
+    static: (( param "Enter the static IP ranges for this subnet" ))
+    reserved: (( param "Enter the reserved IP ranges for this subnet" ))
     cloud_properties:
       security_groups: (( grab meta.security_groups ))
-      subnet: (( param "Enter the AWS subnet ID for this subnet (networks.0<sawmill_z1>.subnets.cloud_properties.subnet))" ))
-
-
+      subnet: (( param "Enter the AWS subnet ID for this subnet" ))

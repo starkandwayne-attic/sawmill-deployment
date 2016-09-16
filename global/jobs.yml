@@ -1,6 +1,6 @@
 ---
 meta:
-  sawmill_servers: (( param "Please override with the IPs of all the Sawmill servers (meta.sawmill_servers)" ))
+  sawmill_servers: (( param "Please override with the IPs of all the Sawmill servers" ))
 
 jobs:
   sawmill:
