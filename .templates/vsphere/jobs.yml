@@ -2,51 +2,25 @@
 jobs:
 - name: sawmill_z1
   instances: 1
-  persistent_disk: 4096
-
-  templates:
-    - { release: sawmill, name: sawmill }
-    - { release: toolbelt, name: toolbelt }
-    - { release: toolbelt, name: toolbelt-quick }
-
+  .: (( inject meta.jobs.sawmill ))
   networks:
-  - name: sawmill_z1 
-    static_ips: (( static_ips(0, 1) )) 
-
+  - name: sawmill_z1
+    static_ips: (( static_ips(0, 1) ))
   resource_pool: small_z1
 
-  properties:
-    sawmill: (( grab properties.sawmill ))
+- name: sawmill_z2
+  instances: 1
+  .: (( inject meta.jobs.sawmill ))
+  networks:
+  - name: sawmill_z2
+    static_ips: (( static_ips(0, 1) ))
+  resource_pool: small_z2
 
-  #- name: sawmill_z2
-  #  instances: 1
-  #  persistent_disk: 4096
-  #  templates:
-  #    - { release: sawmill, name: sawmill }
-  #    - { release: toolbelt, name: toolbelt }
-  #    - { release: toolbelt, name: toolbelt-quick }
-  #  .: (( inject meta.jobs.sawmill ))
-  #  networks:
-  #  - name: sawmill_z2
-  #    static_ips: (( static_ips(0, 1) )) 
-  #  resource_pool: small_z2
-  #  properties:
-  #    sawmill: (( grab properties.sawmill ))
-  #
-  #- name: sawmill_z3
-  #  instances: 1
-  #  persistent_disk: 4096
-  #  templates:
-  #    - { release: sawmill, name: sawmill }
-  #    - { release: toolbelt, name: toolbelt }
-  #    - { release: toolbelt, name: toolbelt-quick }
-  #  .: (( inject meta.jobs.sawmill ))
-  #  networks:
-  #  - name: sawmill_z3
-  #    static_ips: (( static_ips(0, 1) )) 
-  #  resource_pool: small_z3
-  #  properties:
-  #    sawmill: (( grab properties.sawmill ))
-  #
+- name: sawmill_z3
+  instances: 1
+  .: (( inject meta.jobs.sawmill ))
 
-
+  networks:
+  - name: sawmill_z3
+    static_ips: (( static_ips(0, 1) ))
+  resource_pool: small_z3

@@ -9,8 +9,7 @@ networks:
     static: (( param "Enter the static IP ranges for this subnet (networks.0<sawmill_z1>.subnets.static)" ))
     reserved: (( param "Enter the reserved IP ranges for this subnet (networks.0<sawmill_z1>.subnets.reserved)" ))
     cloud_properties:
-      security_groups: (( grab meta.security_groups ))
-      subnet: (( param "Enter the AWS subnet ID for this subnet (networks.0<sawmill_z1>.subnets.cloud_properties.subnet))" ))
+      name: (( param "What is the name of the vSphere network for this subnet?" ))
 
 - name: sawmill_z2
   type: manual
@@ -21,8 +20,7 @@ networks:
     static: (( param "Enter the static IP ranges for this subnet (networks.0<sawmill_z1>.subnets.static)" ))
     reserved: (( param "Enter the reserved IP ranges for this subnet (networks.0<sawmill_z1>.subnets.reserved)" ))
     cloud_properties:
-      security_groups: (( grab meta.security_groups ))
-      subnet: (( param "Enter the AWS subnet ID for this subnet (networks.0<sawmill_z1>.subnets.cloud_properties.subnet))" ))
+      name: (( param "What is the name of the vSphere network for this subnet?" ))
 
 - name: sawmill_z3
   type: manual
@@ -33,8 +31,4 @@ networks:
     static: (( param "Enter the static IP ranges for this subnet (networks.0<sawmill_z1>.subnets.static)" ))
     reserved: (( param "Enter the reserved IP ranges for this subnet (networks.0<sawmill_z1>.subnets.reserved)" ))
     cloud_properties:
-      security_groups: (( grab meta.security_groups ))
-      subnet: (( param "Enter the AWS subnet ID for this subnet (networks.0<sawmill_z1>.subnets.cloud_properties.subnet))" ))
-
-
-
+      name: (( param "What is the name of the vSphere network for this subnet?" ))
