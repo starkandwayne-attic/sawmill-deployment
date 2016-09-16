@@ -7,9 +7,3 @@ networks:
     gateway: 10.244.8.1
     static:
     - 10.244.8.2 - 10.244.8.60
-
-jobs:
-- name: sawmill
-  networks:
-  - name: sawmill
-    static_ips: (( static_ips 0, 1, 2, 3, 5 ))

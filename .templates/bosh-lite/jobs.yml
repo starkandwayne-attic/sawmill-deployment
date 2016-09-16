@@ -1,5 +1,9 @@
 ---
 jobs:
 - name: sawmill
-  instances: 3
+  instances: 1
   .: (( inject meta.jobs.sawmill ))
+  networks:
+  - name: sawmill
+    static_ips: (( static_ips 0, 1, 2, 3, 5 ))
+  resource_pool: small
