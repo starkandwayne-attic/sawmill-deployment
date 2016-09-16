@@ -2,9 +2,9 @@
 meta:
   vcenter:
     clusters:
-      z1: (( param "Define the cluster/resource pool config for z1 (meta.vcenter.clusters.z1 )" ))
-      z2: (( param "Define the cluster/resource pool config for z2 (meta.vcenter.clusters.z2 )" ))
-      z3: (( param "Define the cluster/resource pool config for z3 (meta.vcenter.clusters.z3 )" ))
+      z1: (( param "Define the cluster/resource pool config for z1" ))
+      z2: (( param "Define the cluster/resource pool config for z2" ))
+      z3: (( param "Define the cluster/resource pool config for z3" ))
 
 resource_pools:
   - name: small_z1
