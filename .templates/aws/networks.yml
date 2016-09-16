@@ -35,5 +35,3 @@ networks:
     cloud_properties:
       security_groups: (( grab meta.security_groups ))
       subnet: (( param "Enter the AWS subnet ID for this subnet (networks.0<sawmill_z1>.subnets.cloud_properties.subnet))" ))
-
-
