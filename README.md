@@ -2,9 +2,11 @@ Sawmill Deployment Template
 ======================================
 
 This repository acts as an upstream repository of YAML templates for use
-in deploying one or more Sawmill clusters, via the [Gensis][1] utility.
+in deploying one or more [Sawmill](https://github.com/cloudfoundry-community/sawmill-boshrelease)
+clusters, via the [Gensis][1] utility.
 
-
+Sawmill is a Syslog aggregator, designed to stream all of your BOSH job logs through it
+and out via an http/websocket stream.
 
 Creating a new Sawmill Deployment
 ======================================
