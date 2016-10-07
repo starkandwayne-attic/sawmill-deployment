@@ -1,3 +1,7 @@
 ---
 meta:
   sawmill_servers: (( grab jobs.sawmill.networks.sawmill.static_ips ))
+
+properties:
+  sawmill:
+    skip_ssl_verify: true

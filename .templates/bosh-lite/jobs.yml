@@ -2,7 +2,6 @@
 jobs:
 - name: sawmill
   instances: 1
-  .: (( inject meta.jobs.sawmill ))
   networks:
   - name: sawmill
     static_ips: (( static_ips 0, 1, 2, 3, 5 ))
