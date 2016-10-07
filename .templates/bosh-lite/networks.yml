@@ -3,7 +3,7 @@ networks:
 - name: sawmill
   type: manual
   subnets:
-  - range: 10.244.8.0/24
-    gateway: 10.244.8.1
+  - range: 10.244.68.0/24
+    gateway: 10.244.68.1
     static:
-    - 10.244.8.2 - 10.244.8.60
+    - 10.244.68.2 - 10.244.68.60
