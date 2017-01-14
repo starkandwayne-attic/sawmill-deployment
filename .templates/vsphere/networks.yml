@@ -3,32 +3,32 @@ networks:
 - name: sawmill_z1
   type: manual
   subnets: 
-  - range: (( param "Enter the CIDR address for this subnet (networks.0<sawmill_z1>.subnets.range)" ))
-    gateway: (( param "Enter the Gateway for this subnet (networks.0<sawmill_z1>.subnets.gateway)" ))
+  - range: (( param "Enter the CIDR address for this subnet (networks.<sawmill_z1>.subnets.range)" ))
+    gateway: (( param "Enter the Gateway for this subnet (networks.<sawmill_z1>.subnets.gateway)" ))
     dns: (( grab meta.dns ))
-    static: (( param "Enter the static IP ranges for this subnet (networks.0<sawmill_z1>.subnets.static)" ))
-    reserved: (( param "Enter the reserved IP ranges for this subnet (networks.0<sawmill_z1>.subnets.reserved)" ))
+    static: (( param "Enter the static IP ranges for this subnet (networks.<sawmill_z1>.subnets.static)" ))
+    reserved: (( param "Enter the reserved IP ranges for this subnet (networks.<sawmill_z1>.subnets.reserved)" ))
     cloud_properties:
       name: (( param "What is the name of the vSphere network for this subnet?" ))
 
 - name: sawmill_z2
   type: manual
   subnets: 
-  - range: (( param "Enter the CIDR address for this subnet (networks.0<sawmill_z1>.subnets.range)" ))
-    gateway: (( param "Enter the Gateway for this subnet (networks.0<sawmill_z1>.subnets.gateway)" ))
+  - range: (( param "Enter the CIDR address for this subnet (networks.<sawmill_z2>.subnets.range)" ))
+    gateway: (( param "Enter the Gateway for this subnet (networks.<sawmill_z2>.subnets.gateway)" ))
     dns: (( grab meta.dns ))
-    static: (( param "Enter the static IP ranges for this subnet (networks.0<sawmill_z1>.subnets.static)" ))
-    reserved: (( param "Enter the reserved IP ranges for this subnet (networks.0<sawmill_z1>.subnets.reserved)" ))
+    static: (( param "Enter the static IP ranges for this subnet (networks.<sawmill_z2>.subnets.static)" ))
+    reserved: (( param "Enter the reserved IP ranges for this subnet (networks.<sawmill_z2>.subnets.reserved)" ))
     cloud_properties:
       name: (( param "What is the name of the vSphere network for this subnet?" ))
 
 - name: sawmill_z3
   type: manual
   subnets: 
-  - range: (( param "Enter the CIDR address for this subnet (networks.0<sawmill_z1>.subnets.range)" ))
-    gateway: (( param "Enter the Gateway for this subnet (networks.0<sawmill_z1>.subnets.gateway)" ))
+  - range: (( param "Enter the CIDR address for this subnet (networks.<sawmill_z3>.subnets.range)" ))
+    gateway: (( param "Enter the Gateway for this subnet (networks.<sawmill_z3>.subnets.gateway)" ))
     dns: (( grab meta.dns ))
-    static: (( param "Enter the static IP ranges for this subnet (networks.0<sawmill_z1>.subnets.static)" ))
-    reserved: (( param "Enter the reserved IP ranges for this subnet (networks.0<sawmill_z1>.subnets.reserved)" ))
+    static: (( param "Enter the static IP ranges for this subnet (networks.<sawmill_z3>.subnets.static)" ))
+    reserved: (( param "Enter the reserved IP ranges for this subnet (networks.<sawmill_z3>.subnets.reserved)" ))
     cloud_properties:
       name: (( param "What is the name of the vSphere network for this subnet?" ))
