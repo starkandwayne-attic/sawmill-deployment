@@ -1,0 +1,36 @@
+---
+meta:
+  openstack:
+    azs:
+      z1: (( param "Define the z1 Openstack availability zone" ))
+      z2: (( param "Define the z2 Openstack availability zone" ))
+      z3: (( param "Define the z3 Openstack availability zone" ))
+
+resource_pools:
+  - name: small_z1
+    network: sawmill_z1
+    stemcell: (( grab meta.stemcell ))
+    cloud_properties:
+      instance_type: m1.medium
+      availability_zone: (( grab meta.openstack.azs.z1 ))
+  - name: small_z2
+    network: sawmill_z2
+    stemcell: (( grab meta.stemcell ))
+    cloud_properties:
+      instance_type: m1.medium
+      availability_zone: (( grab meta.openstack.azs.z2))
+  - name: small_z3
+    network: sawmill_z3
+    stemcell: (( grab meta.stemcell ))
+    cloud_properties:
+      instance_type: m1.medium
+      availability_zone: (( grab meta.openstack.azs.z3 ))
+
+compilation:
+  network: sawmill_z1
+  workers: 1
+  reuse_compilation_vms: true
+
+  cloud_properties:
+    instance_type: m1.medium
+    availability_zone: (( grab meta.openstack.azs.z1 ))
