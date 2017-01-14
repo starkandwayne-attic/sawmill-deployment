@@ -1,3 +1,9 @@
 ---
 meta:
   sawmill_servers: (( grab jobs.sawmill_z1.networks.sawmill_z1.static_ips jobs.sawmill_z2.networks.sawmill_z2.static_ips jobs.sawmill_z3.networks.sawmill_z3.static_ips ))
+
+properties:
+  sawmill:
+    users:
+      - name: admin
+        pass: (( vault meta.vault_prefix "/users/admin:password" ))
